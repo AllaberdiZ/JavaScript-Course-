@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Type Conversion</h2>
+    <p>
+      The constructor property returns the constructor function for a variable
+      or an object.
+    </p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "Allaberdi".constructor +
+        "<br>" +
+        (23).constructor +
+        "<br>" +
+        false.constructor +
+        "<br>" +
+        [1, 2, 3, 4].constructor +
+        "<br>" +
+        { name: "John", lname: "Doe" }.constructor +
+        "<br>" +
+        new Date().constructor +
+        "<br>" +
+        function () {}.constructor;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Search for the characters<br />
+      "LO" <br />
+      in the <strong> end </strong>of a word in the phrase:<br />
+      "HELLO, LOOK AT YOU!"<br />
+    </p>
+    <p>Found in position: <span id="demo"></span></p>
+    <script>
+      var str = "HELLO, LOOK AT YOU!";
+      var patt1 = /LO\b/;
+      var result = str.search(patt1);
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>

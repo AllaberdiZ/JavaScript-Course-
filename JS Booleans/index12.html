@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Booleans</h2>
+    <p>Never create booleans as objects.</p>
+    <p>Booleans and objects cannot be safely compared.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      var x = false; //x is a boolean
+      var y = new Boolean(false); //y is an Boolean
+      function myFunction() {
+        document.getElementById("demo").innerHTML = x == y;
+      }
+    </script>
+  </body>
+</html>

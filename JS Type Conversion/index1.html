@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Type Conversion</h2>
+    <p>
+      The typeof operator returns the type of a variable, object, function or
+      expression.
+    </p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        typeof "John" +
+        "<br>" +
+        typeof 30 +
+        "<br>" +
+        typeof Nan +
+        "<br>" +
+        typeof true +
+        "<br>" +
+        typeof [1, 2, 3] +
+        "<br>" +
+        typeof [(fname = "Allaberdi"), (lname = "Zafarzhan uulu"), (age = 18)] +
+        "<br>" +
+        typeof new Date() +
+        "<br>" +
+        typeof function () {} +
+        "<br>" +
+        typeof myCar +
+        "<br>" +
+        typeof null;
+    </script>
+  </body>
+</html>

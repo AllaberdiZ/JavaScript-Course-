@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Loop For</h2>
+    <p id="demo"></p>
+    <script>
+      var cars = ["BMW", "Mercedes-Benz", "Audi", "Lexus", "Bugatti"];
+      var i = 2;
+      var len = cars.length;
+      var txt = " ";
+      for (; i < len; i++) {
+        txt += cars[i] + "</br>";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Break</h2>
+    <p id="demo"></p>
+    <script>
+      var cars = ["BMW", "Mercedes-Benz", "Audi", "Lexus", "Bugatti"];
+      var txt = "";
+      list: {
+        txt += cars[0] + "<br>";
+        txt += cars[1] + "<br>";
+        txt += cars[2] + "<br>";
+        break list;
+        txt += cars[3] + "<br>";
+        txt += cars[4] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+  </body>
+</html>
