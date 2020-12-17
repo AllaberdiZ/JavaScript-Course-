@@ -1,2 +1,1 @@
-# JavaScript Course With W3School 
-
+# JavaScript Course With W3School ;)
