@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The JavaScript <i>this</i> Keyword</h2>
+
+    <p>
+      In this example, <b>this</b> represents the object that "owns" myFunction:
+    </p>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        return this;
+      }
+      document.getElementById("demo").innerHTML = myFunction();
+    </script>
+  </body>
+</html>
