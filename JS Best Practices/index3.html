@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var x1 = {};
+      var x2 = " ";
+      var x3 = 0;
+      var x4 = false;
+      var x5 = [];
+      var x6 = /()/;
+      var x7 = function () {};
+      document.getElementById("demo").innerHTML =
+        typeof x1 +
+        "<br>" +
+        typeof x2 +
+        "<br>" +
+        typeof x3 +
+        "<br>" +
+        typeof x4 +
+        "<br>" +
+        typeof x5 +
+        "<br>" +
+        typeof x6 +
+        "<br>" +
+        typeof x7;
+    </script>
+  </body>
+</html>

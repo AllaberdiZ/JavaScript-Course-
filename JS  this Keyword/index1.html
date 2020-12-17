@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The JavaScript <i>this</i> Keyword</h2>
+
+    <p>In this example, <b>this</b> represents the <b>person</b> object.</p>
+    <p>Because the person object "owns" the fullName method.</p>
+    <p id="demo"></p>
+    <script>
+      var person = {
+        firstName: "Allaberdi",
+        lastName: "Zufarzhon uulu",
+        age: 18,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+  </body>
+</html>
