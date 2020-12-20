@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Number Methods</h2>
+
+    <p>
+      The isFinite() method returns false if the argument is Infinity or NaN.
+    </p>
+    <p>Otherwise it returns true.</p>
+
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        isFinite(10 / 1) + "<br>" + isFinite(10 / 0);
+    </script>
+  </body>
+</html>
