@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>JavaScript objects are mutable.</p>
+    <p>Any changes to a copy of an object will also change the original.</p>
+
+    <p id="demo"></p>
+    <script>
+      var person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 55,
+        eyeColor: "Blue",
+      };
+      var x = person;
+      x.age = 45;
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old.";
+    </script>
+  </body>
+</html>
