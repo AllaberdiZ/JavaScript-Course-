@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Objects</h2>
+    <p id="demo"></p>
+    <script>
+      function Person(first, last, age) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+      }
+      Person.prototype.fullname = function () {
+        return this.firstName + " " + this.lastName;
+      };
+      var myFather = new Person("John", "Doe", 50);
+      document.getElementById("demo").innerHTML =
+        "My father is " + myFather.fullname();
+    </script>
+  </body>
+</html>
