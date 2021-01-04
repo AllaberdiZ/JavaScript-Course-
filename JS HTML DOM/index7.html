@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">Hello! Now I'm visible</p>
+    <input
+      type="button"
+      value="show text"
+      onclick="
+    document.getElementById('demo').style.visibility = 'visible'"
+    />
+    <input
+      type="button"
+      value="hide text"
+      onclick="document.getElementById('demo').style.visibility = 'hidden'"
+    />
+  </body>
+</html>
