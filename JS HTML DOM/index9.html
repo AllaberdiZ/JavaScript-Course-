@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+    #animation {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      background: rgb(85, 20, 85);
+    }
+  </style>
+  <body>
+    <p><button onclick="myMove()">Click Me!</button></p>
+    <div id="container">
+      <div id="animation"></div>
+    </div>
+    <script>
+      function myMove() {
+        var elm = document.getElementById("animation");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elm.style.top = pos + "px";
+            elm.style.left = pos + "px";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
