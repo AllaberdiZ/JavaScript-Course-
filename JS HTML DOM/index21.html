@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function lightOff() {
+        document.getElementById("myImage").src = "bulboff.gif";
+      }
+      function lightOn() {
+        document.getElementById("myImage").src = "bulbon.gif";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      id="myImage"
+      onmouseup="lightOff()"
+      onmousedown="lightOn()"
+      src="bulboff.gif"
+      alt="bulboff"
+    />
+    <p>This message was triggered from the onload event</p>
+  </body>
+</html>
