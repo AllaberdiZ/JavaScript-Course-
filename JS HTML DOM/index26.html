@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript addEventListener()</h1>
+    <p>
+      This example uses the addEventListener() method to add many events on the
+      same button.
+    </p>
+    <button id="myBtn">Click Me</button>
+    <p id="demo"></p>
+    <script>
+      var x = document.getElementById("myBtn");
+      x.addEventListener("click", whenClick);
+      x.addEventListener("mouseover", whenMover);
+      x.addEventListener("mouseout", whenMout);
+
+      function whenClick() {
+        document.getElementById("demo").innerHTML += "Clicked!" + "<br>";
+      }
+      function whenMover() {
+        document.getElementById("demo").innerHTML += "Mouse Over!" + "<br>";
+      }
+      function whenMout() {
+        document.getElementById("demo").innerHTML += "Mouse Out!" + "<br>";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript addEventListener()</h1>
+    <p>
+      This example demonstrates how to pass parameter values when using the
+      addEventListener() method.
+    </p>
+    <p>Click the button to perform a calculation.</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+      var p1 = 4;
+      var p2 = 5;
+      var p3 = 5;
+      document.getElementById("myBtn").addEventListener("click", function () {
+        myFunction(p1, p2, p3);
+      });
+      function myFunction(x, y, z) {
+        var result = x * y * z;
+        document.getElementById("demo").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

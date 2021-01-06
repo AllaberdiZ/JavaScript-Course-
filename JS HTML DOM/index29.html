@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #d1,
+      #d2 {
+        background-color: coral;
+        padding: 50px;
+        margin: 100px;
+      }
+      #p1,
+      #p2 {
+        background-color: white;
+        padding: 20px;
+        font-size: 20px;
+        border: 1px, solid;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript addEventListener()</h1>
+    <div id="d1">
+      <h2>Bubbling:</h2>
+      <p id="p1">Clcik Me!</p>
+    </div>
+    <div id="d2">
+      <h2>Capturig:</h2>
+      <p id="p2">Clcik Me!</p>
+    </div>
+    <script>
+      document.getElementById("p1").addEventListener(
+        "click",
+        function () {
+          alert("You clicked the white Element");
+        },
+        false
+      );
+      document.getElementById("d1").addEventListener(
+        "click",
+        function () {
+          alert("You clicked the orange Element");
+        },
+        false
+      );
+      document.getElementById("p2").addEventListener(
+        "click",
+        function () {
+          alert("You clicked the white Element");
+        },
+        true
+      );
+      document.getElementById("d2").addEventListener(
+        "click",
+        function () {
+          alert("You clicked the orange Element");
+        },
+        true
+      );
+    </script>
+  </body>
+</html>
