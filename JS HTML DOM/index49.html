@@ -6,21 +6,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>JavaScript HTML DOM</h2>
+    <h2>JavaScript HTML DOM!</h2>
 
     <p>Hello World!</p>
 
     <p>Hello USA!</p>
 
     <p>Click the button to change the color of all p elements.</p>
-    <p id="demo"></p>
-    <button onclick="myFunction()">Click Me!</button>
+    <button onclick="myFunction()">Click Me</button>
     <script>
       function myFunction() {
-        var myCollection = document.getElementsByTagName("p");
+        var myNodeList = document.querySelectorAll("p");
         var i;
-        for (i = 0; i < myCollection.length; i++) {
-          myCollection[i].style.color = "red";
+        for (i = 0; i < myNodeList.length; i++) {
+          myNodeList[i].style.color = "red";
         }
       }
     </script>
