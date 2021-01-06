@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div01">
+      <p id="p1">This is a paragraph</p>
+      <p id="p2">This is another paragraph</p>
+    </div>
+    <button onclick="myFunction()">Remove Element</button>
+    <script>
+      function myFunction() {
+        var parent = document.getElementById("div01");
+        var child = document.getElementById("p1");
+        parent.removeChild(child);
+      }
+    </script>
+  </body>
+</html>
