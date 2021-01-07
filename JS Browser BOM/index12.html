@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The window.location object</h1>
+    <p id="demo"></p>
+    <p>
+      <b>Note: </b>If the port number is default (80 for http and 443 for
+      https), most browsers will display 0 or nothing.
+    </p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        "The URL port number of the current page is:" + window.location.port;
+    </script>
+  </body>
+</html>
