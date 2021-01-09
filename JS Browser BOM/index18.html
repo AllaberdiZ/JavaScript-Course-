@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Navigator Object</h1>
+    <p>The appCodeName property returns the code name of the browser.</p>
+    <p>
+      Do not rely on it! "Mozilla" is the application code name for Chrome,
+      Firefox, IE, Safari, and Opera.
+    </p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "The navigator.appCodeName is " + navigator.appCodeName;
+    </script>
+  </body>
+</html>
