@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Store and retrive data from local storage.</h2>
+    <p id="demo"></p>
+    <script>
+      var myObj = { name: "John", age: 31, city: "New York" };
+      myJSON = JSON.stringify(myObj);
+      localStorage.setItem("testJSON", myJSON);
+
+      text = localStorage.setItem("testJSON", myJSON);
+      var obj = JSON.parse(myJSON);
+      document.getElementById("demo").innerHTML = obj.city;
+    </script>
+  </body>
+</html>
