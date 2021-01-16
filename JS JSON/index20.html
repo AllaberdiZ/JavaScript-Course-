@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Use bracket notation to access the property values.</h2>
+    <p id="demo"></p>
+    <script>
+      var obj, x;
+      obj = { name: "John", age: 30, car: null };
+      for (x in obj) {
+        document.getElementById("demo").innerHTML += obj[x] + "<br>";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>How to delete properties of a JSON object.</h2>
+    <p id="demo"></p>
+    <script>
+      var myObj,
+        i,
+        x = "";
+      myObj = {
+        name: "John",
+        age: 25,
+        cars: {
+          car1: "Ford",
+          car2: "BMW",
+          car3: "Fiat",
+        },
+      };
+      delete myObj.cars.car2;
+
+      for (i in myObj.cars) {
+        x += myObj.cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>
