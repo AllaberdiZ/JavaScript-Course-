@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Loopin through an array using a for loop:</h2>
+    <p id="demo"></p>
+    <script>
+      var myObj,
+        i,
+        x = "";
+      myObj = {
+        name: "John",
+        age: 33,
+        cars: ["Ford", "BMW", "Fiat"],
+      };
+      for (i = 0; i < myObj.cars.length; i++) {
+        x += myObj.cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>

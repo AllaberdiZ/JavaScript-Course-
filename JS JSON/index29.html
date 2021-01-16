@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>How to modify an array value of a JSON object.</h2>
+    <p id="demo"></p>
+    <script>
+      "use strict";
+      var myObj,
+        j,
+        i,
+        x = "";
+      myObj = {
+        name: "John",
+        age: 30,
+        cars: ["Ford", "BMW", "Fiat"],
+      };
+      myObj.cars[1] = "Mercedes-Benz";
+      for (i = 0; i < myObj.cars.length; i++) {
+        x += myObj.cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>

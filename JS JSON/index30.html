@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>How to delete properties of an array.</h2>
+    <p id="demo"></p>
+    <script>
+      var myObj,
+        i,
+        x = "";
+      myObj = {
+        name: "John",
+        age: 30,
+        cars: ["Ford", "BMW", "Fiat"],
+      };
+      delete myObj.cars[1];
+      for (i in myObj.cars) {
+        x += myObj.cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>
