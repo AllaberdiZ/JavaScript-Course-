@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Get data as JSON from a PHP file on the server.</h2>
+    <p id="demo"></p>
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && status == 200) {
+          myObj = JSON.parse(this.response);
+          document.getElementById("demo").innerHTML = myObj.name;
+        }
+      };
+      xmlhttp.open("GET", "demo_file.php", true);
+      xmlhttp.send();
+    </script>
+  </body>
+</html>
