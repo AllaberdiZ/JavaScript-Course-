@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Remove an HTML Element</h2>
+    <h2 id="id01">Hello World!</h2>
+    <h2 id="id02">Hello Sweden!</h2>
+    <script>
+      var element = document.getElementById("id02");
+      element.parentNode.removeChild(element);
+    </script>
+  </body>
+</html>

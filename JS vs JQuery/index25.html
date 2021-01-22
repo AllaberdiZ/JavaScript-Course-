@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Getting Parent HTML Element</h1>
+
+    <h2 id="01">Hello World!</h2>
+    <h2 id="02">Hello Sweden!</h2>
+    <h2 id="03">Hello Japan!</h2>
+    <p id="demo"></p>
+    <script>
+      $(document).ready(function () {
+        var element = $("#02").parent();
+        $("#demo").text(element.prop("nodeName"));
+      });
+    </script>
+  </body>
+</html>
