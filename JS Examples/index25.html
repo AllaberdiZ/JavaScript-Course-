@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript is Case Sensitive</h2>
+    <p id="demo1"></p>
+    <p>This is <strong>lastName</strong>.</p>
+    <p id="demo2"></p>
+    <p>This is <strong>lastname</strong>.</p>
+    <br />
+    <p>As you saw they are different values.</p>
+    <script>
+      var lastName, lastname;
+      lastName = "John";
+      lastname = "Paterson";
+      document.getElementById("demo1").innerHTML = lastName;
+      document.getElementById("demo2").innerHTML = lastname;
+    </script>
+  </body>
+</html>
