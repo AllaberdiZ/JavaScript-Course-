@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Strings</h2>
+    <p>
+      You can use quotes inside a string, as long as they don't match the quotes
+      surrounding the string:
+    </p>
+    <p id="demo"></p>
+    <script>
+      var x = "It's alright.";
+      var y = " He is called 'Johnny'";
+      var z = 'He is called "Johnny"';
+      document.getElementById("demo").innerHTML = x + "<br>" + y + "<br>" + z;
+    </script>
+  </body>
+</html>
