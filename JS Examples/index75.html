@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myFunction(txt) {
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JS Functions</h2>
+    <p>
+      When you click on one of the buttons, a function will be called. The
+      function will display the argument that is passed to it.
+    </p>
+    <button onclick="myFunction('Good Morning')">In the Morning</button>
+    <button onclick="myFunction('Good Evening')">In the Evening</button>
+    <p id="demo"></p>
+  </body>
+</html>
