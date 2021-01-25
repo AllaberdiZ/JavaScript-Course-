@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Numbers</h2>
+    <p>The parseFloat() method converts strings to numbers:</p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        parseFloat("10") +
+        "<br>" +
+        parseFloat("10.3") +
+        "<br>" +
+        parseFloat("10 6") +
+        "<br>" +
+        parseFloat("10 years") +
+        "<br>" +
+        parseFloat(" years 10");
+    </script>
+  </body>
+</html>
