@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS String</h2>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo">Please visot the Microsoft!</p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("demo").innerHTML;
+        var y = x.replace("Microsoft", "W3Schools");
+        document.getElementById("demo").innerHTML = y;
+      }
+    </script>
+  </body>
+</html>

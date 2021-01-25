@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS String</h2>
+    <p>
+      Click "Try it" to display the first array element, after a string split.
+    </p>
+    <button onclick="myFunc()">Try it</button>
+
+    <p id="demo"></p>
+    <script>
+      function myFunc() {
+        var x = "a,b,c,d,e,f";
+        var y = x.split(",");
+        document.getElementById("demo").innerHTML = y[0];
+      }
+    </script>
+  </body>
+</html>
