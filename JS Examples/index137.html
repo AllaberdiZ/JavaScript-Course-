@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Numbers</h2>
+    <p>Never create numbers as objects.</p>
+    <p>Numbers and objects cannot be safely compared.</p>
+    <p id="demo"></p>
+    <script>
+      var x = 500;
+      var y = new Number(500);
+      document.getElementById("demo").innerHTML = x === y;
+    </script>
+  </body>
+</html>

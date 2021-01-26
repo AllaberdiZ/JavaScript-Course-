@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Numbers</h2>
+    <p>The toString() method can output numbers from base 2 to 36:</p>
+    <p id="demo"></p>
+    <script>
+      var x = 32;
+      document.getElementById("demo").innerHTML =
+        "32 = " +
+        "<br>" +
+        "Decimal " +
+        x.toString(10) +
+        "<br>" +
+        "Hexademical" +
+        x.toString(16) +
+        "<br>" +
+        "Octal " +
+        x.toString(8) +
+        "<br>" +
+        "Binary " +
+        x.toString(2);
+    </script>
+  </body>
+</html>
