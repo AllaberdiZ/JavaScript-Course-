@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array Sort</h2>
+    <p id="demo"></p>
+    <script>
+      var points = [21, 12, 223, 45, 100, 1000];
+      document.getElementById("demo").innerHTML =
+        "The highest number is:" + myArrMax(points);
+
+      function myArrMax(arr) {
+        var len = arr.length;
+        var max = -Infinity;
+        while (len--) {
+          if (arr[len] > max) {
+            max = arr[len];
+          }
+        }
+        return max;
+      }
+    </script>
+  </body>
+</html>

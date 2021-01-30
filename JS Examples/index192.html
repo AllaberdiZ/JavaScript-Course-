@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array Sort</h2>
+    <p>Click the button (again and again) to sort the array in random order.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      var points = [1, 5, 51, 12, 7, 10];
+      document.getElementById("demo").innerHTML = points;
+
+      function myFunction() {
+        points.sort(function (a, b) {
+          return 0.5 - Math.random();
+        });
+        document.getElementById("demo").innerHTML = points;
+      }
+    </script>
+  </body>
+</html>

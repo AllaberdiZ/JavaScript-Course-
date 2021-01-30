@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array Sort</h2>
+    <p id="demo"></p>
+    <script>
+      var points = [1, 2, 55, 45];
+      document.getElementById("demo").innerHTML =
+        "The lowest number is: " + myArrMin(points);
+
+      function myArrMin(arr) {
+        return Math.min.apply(null, arr);
+      }
+    </script>
+  </body>
+</html>

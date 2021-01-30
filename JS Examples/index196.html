@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array Sort</h2>
+    <p id="demo"></p>
+    <script>
+      var points = [1, 5, 15, 445];
+      document.getElementById("demo").innerHTML = myArrMax(points);
+
+      function myArrMax(arr) {
+        return Math.max.apply(null, arr);
+      }
+    </script>
+  </body>
+</html>
