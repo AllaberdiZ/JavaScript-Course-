@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS isDate()</h2>
+    <p>This "home made" isDate() function returns true when used on an date:</p>
+    <p id="demo"></p>
+    <script>
+      var myDate = new Date();
+      document.getElementById("demo").innerHTML = isDate(myDate);
+
+      function isDate(x) {
+        return x.constructor.toString().indexOf("Date") > -1;
+      }
+    </script>
+  </body>
+</html>
