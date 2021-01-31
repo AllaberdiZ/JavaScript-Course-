@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array .every()</h2>
+    <p>The every() method checks if all array values pass a test.</p>
+    <p id="demo"></p>
+    <script>
+      var num = [155, 48, 10, 2, 15, 5];
+      var allOver18 = num.every(myFunction);
+      document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+      function myFunction(total, value, index, array) {
+        return value > 18;
+      }
+    </script>
+  </body>
+</html>

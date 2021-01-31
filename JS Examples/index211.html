@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array .findIndex()</h2>
+    <p id="demo"></p>
+    <script>
+      var num = [18, 1, 11, 17, 19, 55];
+      var b = num.findIndex(myFunction);
+      document.getElementById("demo").innerHTML =
+        "First number over 18 has index " + b;
+
+      function myFunction(value, index, array) {
+        return value > 18;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array .reduce()</h2>
+    <p>This example finds the sum of all numbers in an array:</p>
+    <p id="demo"></p>
+    <script>
+      var num = [10, 11, 55, 241, 4];
+      var sum = num.reduce(myFunction);
+      document.getElementById("demo").innerHTML = sum;
+
+      function myFunction(total, value, array, index) {
+        return total + value;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Array .lastIndexOf()</h2>
+    <p>
+      The lastIndexOf() does not work in Internet Explorer 8 and earlier
+      versions.
+    </p>
+    <p id="demo"></p>
+    <script>
+      var fruits = ["Apple", "Banana", "Mango", "Apple"];
+      var a = fruits.lastIndexOf("Apple");
+      document.getElementById("demo").innerHTML =
+        "Apple is found in position " + a;
+    </script>
+  </body>
+</html>
