@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Do/While Loop</h2>
+    <p id="demo"></p>
+    <script>
+      var txt = "",
+        i = 0;
+      do {
+        txt += "The number is " + i + "<br>";
+        i++;
+      } while (i < 10);
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+  </body>
+</html>
