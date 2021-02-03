@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Object Constructor</h2>
+    <p id="demo"></p>
+    <script>
+      function person(first, second, third) {
+        this.firstName = first;
+        this.lastName = second;
+        this.age = third;
+      }
+      var myFather = new person("John", "Doe", 44);
+      document.getElementById("demo").innerHTML =
+        " My father's name is " + myFather.firstName;
+    </script>
+  </body>
+</html>
