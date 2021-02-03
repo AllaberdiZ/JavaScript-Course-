@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS JSON</h2>
+    <p>Access a JSON object using dot notation:</p>
+    <p id="demo"></p>
+    <script>
+      var myObj, x;
+      myObj = {
+        fname: "John",
+        lname: "Doe",
+      };
+      x = myObj.fname + " " + myObj.lname;
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>
