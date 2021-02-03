@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Error Handler</h2>
+    <input type="button" value="View message" onclick="message()" />
+    <script>
+      onerror = handleErr;
+      var txt = "";
+      function handleErr(msg, url, l) {
+        txt = "There was an error on this page.\n\n";
+        txt += "Error: " + msg + "\n";
+        txt += "URL: " + url + "\n";
+        txt += "Line: " + l + "\n\n";
+        txt += "Click OK to continue.\n\n";
+        alert(txt);
+        return true;
+      }
+      function message() {
+        addlert("hello");
+      }
+    </script>
+  </body>
+</html>

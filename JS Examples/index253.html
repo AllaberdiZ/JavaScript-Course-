@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Error Handling</h2>
+    <p id="demo"></p>
+    <input type="button" onclick="message()" value="View message" />
+    <script>
+      var txt = "";
+      function message() {
+        try {
+          addlert("Hello");
+        } catch (err) {
+          txt = "There was an error on this page.\n\n";
+          txt += "Click OK to continue  viewing this page \n";
+          txt += "or Cancel to return to the home page.\n\n";
+          if (!confirm(txt)) {
+            document.location.href = "https://www.w3schools.com/";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
