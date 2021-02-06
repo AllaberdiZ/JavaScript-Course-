@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form1" action="index3.html">
+      <button id="btn1" type="button" name="noname" value="btn_HTML">
+        HTML
+      </button>
+      <button id="btn2" type="button" name="noname" value="btn_CSS">CSS</button>
+    </form>
+    <p>Click the "Try it" button to return the value of the "HTML" button:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("btn1").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

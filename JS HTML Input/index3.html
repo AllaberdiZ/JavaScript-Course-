@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1" type="button">HTML</button>
+    <p>Click the "Try it" button to return the type of the "HTML" button:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("btn1").type;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
