@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="frm1" action="/action_page.php" target="_self">
+      First name: <input type="text" /> <br />
+      Last name : <input type="text" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Click "Try it" to display the target of the form:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("frm1").target;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

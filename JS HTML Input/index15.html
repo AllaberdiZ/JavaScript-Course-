@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="form1" id="frm1">
+      First name: <input type="text" /> <br />
+      Last name: <input type="text" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Click "Try it" to display the name of the form:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("frm1").name;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
