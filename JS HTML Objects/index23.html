@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <iframe
+      src="demo_index.htm"
+      frameborder="5"
+      id="myFrame"
+      height="200"
+      width="250"
+      name="iframe_b"
+      ><p>Your browser does not support iframes.</p></iframe
+    >
+    <p>
+      Click the button to display the value of the src attribute in the iframe.
+    </p>
+    <button onclick="myFunction()">Change background</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myFrame").src;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
