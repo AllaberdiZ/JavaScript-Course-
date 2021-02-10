@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      A function is triggered when the user releases a key in the input field.
+      The function transforms the character to upper case.
+    </p>
+    Enter your name: <input type="text" onkeyup="myFunction()" id="fname" />
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

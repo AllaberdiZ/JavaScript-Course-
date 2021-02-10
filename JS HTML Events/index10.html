@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>The onkeyup event occurs when the a keyboard key is on its way UP.</p>
+
+    <form action="">
+      Enter your name:
+      <input type="text" name="myInt" onkeyup="myFunction()" size="20" />
+      <input type="text" name="myInt2" size="20" />
+    </form>
+
+    <script>
+      function myFunction() {
+        document.forms[0].myInt2.value = document.forms[0].myInt.value;
+      }
+    </script>
+  </body>
+</html>
