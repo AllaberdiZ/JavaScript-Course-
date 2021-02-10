@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div onmousedown="whichButton(event);">
+      Click this text (with one of your mouse-buttons)
+      <p>
+        0 Specifies the left mouse-button<br />
+        1 Specifies the middle mouse-button<br />
+        2 Specifies the right mouse-button
+      </p>
+      <p>
+        <strong>Note:</strong> Internet Explorer 8, and earlier, returns another
+        result:<br />
+        1 Specifies the left mouse-button<br />
+        4 Specifies the middle mouse-button<br />
+        2 Specifies the right mouse-button
+      </p>
+    </div>
+    <script>
+      function whichButton(event) {
+        alert("You pressed button: " + event.button);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onmousedown="whichElement(event)">
+    <p>
+      Click somewhere in the document. An alert box will alert the name of the
+      element you clicked on.
+    </p>
+    <h3>This is a heading</h3>
+    <img src="smiley.gif" alt="Smiley" width="32" height="32" />
+    <p>This is a paragraph</p>
+    <script>
+      function whichElement(e) {
+        var trag;
+        if (!e) {
+          var e = window.event;
+        }
+        if (e.target) {
+          targ = e.target;
+        } else if (e.srcElement) {
+          targ = e.srcElement;
+        }
+        var tname;
+        tname = targ.tagName;
+        alert("You clicked on a " + tname + " element.");
+      }
+    </script>
+  </body>
+</html>
