@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onmousedown="coordinates(event)">
+      Click this paragraph, to display the x and y coordinates of the cursor,
+      relative to the screen.
+    </p>
+    <p id="demo"></p>
+    <script>
+      function coordinates(event) {
+        document.getElementById("demo").innerHTML =
+          "X=" + event.screenX + "<br>" + "Y=" + event.screenY;
+      }
+    </script>
+  </body>
+</html>

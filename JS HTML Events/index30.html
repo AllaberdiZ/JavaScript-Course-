@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onmousedown="myFunction(event)">
+    <p>
+      Click on this paragraph. An alert box will tell you if you pressed the
+      shift key or not.
+    </p>
+
+    <p id="demo"></p>
+    <script>
+      function myFunction(event) {
+        var txt = "The shift key was NOT pressed!";
+        if (event.shiftKey == 1) {
+          txt = "The shift key pressed!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeyup="myFunction(event)">
+    <p>
+      <b>Note:</b> Make sure the right frame has focus when trying this example!
+    </p>
+    <p>Click on this page, and press a key on your keyboard.</p>
+    <p id="demo"></p>
+    <script>
+      function myFunction(event) {
+        document.getElementById("demo").innerHTML = event.keyCode;
+      }
+    </script>
+  </body>
+</html>
