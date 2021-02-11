@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="image.jpg" onerror="myFunction()" />
+    <p>
+      A function is triggered if an error occurs when loading the image. The
+      function shows an alert box with a text. In this example we refer to an
+      image that does not exist, therefore the onerror event occurs.
+    </p>
+    <script>
+      function myFunction() {
+        alert("The image could not be loaded.");
+      }
+    </script>
+  </body>
+</html>
