@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myWindow;
+        function openWin() {
+          myWindow = window.open("", "", "width=400 ,height=200");
+        }
+        
+        function closeWin() {
+          if (myWindow) {
+            myWindow.close();
+          }
+        }
+        
+        function checkWin() {
+          msg = ""
+          if (!myWindow) {
+            msg = "was never opened";
+          } else { 
+            if (myWindow.closed) { 
+              msg = "is closed";
+            } else {
+              msg = "is open";
+            }
+          
+          }
+          document.getElementById("msg").innerHTML = 
+          "myWindow " + msg;
+        }
+        </script>
+        <body>
+        
+        <button onclick="openWin()">Open myWindow</button>
+        <button onclick="closeWin()">Close myWindow</button>
+        <button onclick="checkWin()">Is myWindow open?</button>
+        
+        <br><br>
+        <div id="msg"></div>
+</body>
+</html>

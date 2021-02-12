@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openwindow()">Create window</button>
+    <button onclick="myFunction()">Resize window</button>
+
+    <script>
+      var w;
+      function openwindow() {
+        w = window.open("", "", "width=100,height=100");
+        w.focus();
+      }
+      function myFunction() {
+        w.resizeBy(500, 500);
+        w.focus();
+      }
+    </script>
+  </body>
+</html>
