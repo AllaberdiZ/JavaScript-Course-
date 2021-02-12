@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="timeText()">Click me</button>
+    <p id="demo">
+      Click on "Try it". I will display when two, four, and six seconds have
+      passed.
+    </p>
+
+    <script>
+      function timeText() {
+        setTimeout(myTimeout1, 2000);
+        setTimeout(myTimeout2, 4000);
+        setTimeout(myTimeout3, 6000);
+      }
+      function myTimeout1() {
+        document.getElementById("demo").innerHTML = "2 Seconds";
+      }
+
+      function myTimeout2() {
+        document.getElementById("demo").innerHTML = "4 Seconds";
+      }
+
+      function myTimeout3() {
+        document.getElementById("demo").innerHTML = "6 Seconds";
+      }
+    </script>
+  </body>
+</html>
