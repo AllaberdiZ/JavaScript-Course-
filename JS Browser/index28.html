@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Clicking on the "Go 2 pages back" button here will not result in any
+      action, because there is no previous URL in the history list.
+    </p>
+    <button onclick="myFunction()">Go 2 pages back</button>
+    <script>
+      function myFunction() {
+        history.go(-2);
+      }
+    </script>
+  </body>
+</html>
